@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Modal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main class="bg-[#606265] w-screen h-screen flex justify-center items-center">
+            <article class="rounded bg-[#ebeced] shadow-xl px-3 py-10 w-96 flex flex-col gap-5">
+                <section class="flex justify-end">
+                    <button>X</button>
+                </section>
+                <div class="text-center">
+                    <h1 class="font-bold text-xl text-slate-800 mb-3">Share this article</h1>
+                    <p class="text-sm">If you liked this article share it with your friends.</p>
+                    <p class="text-sm">They will thank you later.</p>
+                </div>
+                <ul class="flex justify-center flex-row gap-5">
+                    <li>
+                        <button class="text-sm bg-[#405896] text-white p-2 px-3 rounded">Facebook</button>
+                    </li>
+                    <li>
+                        <button class="text-sm bg-[#1da1f2] text-white p-2 px-3 rounded">Twitter</button>
+                    </li>
+                    <li>
+                        <button class="text-sm bg-black text-white p-2 px-3 rounded">Reddit</button>
+                    </li>
+                </ul>
+                <div class="flex flex-row gap-2 justify-center">
+                    <h3 class="text-slate-800 font-bold">4,5 K</h3>
+                    <h3>Shares</h3>
+                </div>
+                <footer class="flex justify-center">
+                    <button class="text-orange-600">Close this window</button>
+                </footer>
+            </article>
+        </main>
+    </body>
+</html>
