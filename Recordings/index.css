@@ -1,0 +1,8 @@
+/* Add CSS here */
+
+.hover-section:hover .h1,
+.hover-section:hover .text-slate-800,
+.hover-section:hover .text-slate-700,
+.hover-section:hover .text-slate-600 {
+    color: white;
+}
