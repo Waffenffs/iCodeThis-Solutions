@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <main class="w-screen h-screen flex justify-center items-center bg-[#262847]">
+            <article class="bg-[#303057] w-96">
+                <header class="bg-[#2b2c50] p-5 flex flex-col shadow">
+                    <div class="flex w-full justify-end">
+                        <svg class="cursor-pointer hover:fill-slate-500 fill-slate-600" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                            <path
+                                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                        </svg>
+                    </div>
+                    <h1 class="text-xl font-bold text-[#d4d5f8]">Edit Your Account</h1>
+                </header>
+                <section class="p-5">
+                    <h1 class="text-[#d4d5f8] text-sm mb-2">N A M E</h1>
+                    <input type="text" class="w-full mb-5 text-[#d4d5f8] focus:outline-indigo-500 outline-none p-2 bg-inherit border border-[#42426d]">
+                    <h1 class="text-[#d4d5f8] text-sm mb-2">E M A I L</h1>
+                    <input type="text" class="w-full mb-5 text-[#d4d5f8] focus:outline-indigo-500 outline-none p-2 bg-inherit border border-[#42426d]">
+                    <div>
+                        <h1 class="text-[#d4d5f8] tracking-widest">DATE OF BIRTH</h1>
+                        <div class="flex flex-row gap-3">
+                            <input class="w-1/3 mb-5 text-[#d4d5f8] focus:outline-indigo-500 outline-none p-2 bg-inherit border border-[#42426d]" type="number" placeholder="Month">
+                            <input class="w-1/3 mb-5 text-[#d4d5f8] focus:outline-indigo-500 outline-none p-2 bg-inherit border border-[#42426d]" type="text" placeholder="Date">
+                            <input class="w-1/3 mb-5 text-[#d4d5f8] focus:outline-indigo-500 outline-none p-2 bg-inherit border border-[#42426d]" type="number" placeholder="Year">
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="p-5 flex justify-center flex-row gap-3 w-full bg-[#2b2c50]">
+                    <button class="w-36 bg-[#34355b] p-3 rounded shadow-xl">
+                        <span class="text-[#d4d5f8] font-medium text-xl">Cancel</span>
+                    </button>
+                    <button class="w-36 bg-[#f27363] p-3 rounded shadow-xl">
+                        <span class="text-[#d4d5f8] font-medium text-xl">Save</span>
+                    </button>
+                </footer>
+            </article>
+        </main>
+    </body>
+</html>
