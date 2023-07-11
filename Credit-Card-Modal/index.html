@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="w-screen h-screen flex justify-center items-center bg-[#f5f6fd]">
+        <article class="w-1/2 bg-[#fafcff] p-10 shadow-xl shadow-blue-200 rounded">
+            <!-- credit card section -->
+            <section class="text-[#074c8e] w-3/4">
+                <span class="text-slate-500">4/4</span>
+                <h1 class="text-2xl font-bold tracking-wider">Last Step!</h1>
+                <p class="tracking-wider mt-1">Enter your payment info below.</p>
+                <div class="mt-5 flex flex-row gap-3 w-full">
+                    <button id="creditCardModal" class="w-1/2 border py-3 px-5 flex flex-row gap-3 justify-center items-center transition hover:border-blue-200 hover:shadow">
+                        <span class="font-semibold">Credit Card</span>
+                        <div class="h-8 w-8 border-2 rounded-full flex items-center justify-center">
+                            <svg id="creditCardCheck" class="opacity-0 fill-green-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                    </button>
+
+                    <button id="paypalModal" class="w-1/2 border py-3 px-5 flex flex-row gap-3 justify-center items-center transition hover:border-blue-200 hover:shadow">
+                        <span class="font-semibold">PayPal</span>
+                        <div class="h-8 w-8 border-2 rounded-full flex items-center justify-center">
+                            <svg id="paypalCheck" class="opacity-0 fill-green-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="mt-10 flex flex-col gap-1 w-full">
+                    <span class="text-sm">Card Number</span>
+                    <input 
+                        class="w-full border py-3 indent-3 placeholder:text-xl placeholder:tracking-wider tracking-wider placeholder:text-slate-400 placeholder:font-semibold outline-none text-xl font-semibold"
+                        type="text" 
+                        placeholder="123 456 78910 1112"
+                    >
+                </div>
+
+                <div class="mt-5 w-full flex flex-row items-center">
+                    <!-- expiration date section  -->
+                    <section class="flex flex-col w-1/2">
+                        <span class="text-sm">Expiration Date</span>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="relative">
+                                <button id="monthButton" class="mt-1 flex flex-row items-center gap-3 border py-3 px-3">
+                                    <span class="text-xl text-slate-400 font-semibold">Month</span>
+                                    <svg class="fill-[#074c8e]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                </button>
+    
+                                <!-- months nav elements  -->
+                                <ul id="monthNav" class="opacity-0 flex flex-col overflow-y-scroll mt-1 h-36 bg-white w-full gap-2 py-2 px-3 border absolute">
+                                    <li class="cursor-pointer">Jan</li>
+                                    <li class="cursor-pointer">Feb</li>
+                                    <li class="cursor-pointer">Mar</li>
+                                    <li class="cursor-pointer">Apr</li>
+                                    <li class="cursor-pointer">May</li>
+                                    <li class="cursor-pointer">Jun</li>
+                                    <li class="cursor-pointer">Jul</li>
+                                    <li class="cursor-pointer">Aug</li>
+                                    <li class="cursor-pointer">Sep</li>
+                                    <li class="cursor-pointer">Oct</li>
+                                    <li class="cursor-pointer">Nov</li>
+                                    <li class="cursor-pointer">Dec</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative">
+                                <button id="dayButton" class="mt-1 flex flex-row items-center gap-3 border py-3 px-3">
+                                    <span class="text-xl text-slate-400 font-semibold">Day</span>
+                                    <svg class="fill-[#074c8e]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                </button>
+
+                                <!-- days nav elements  -->
+                                <ul id="dayNav" class="opacity-0 flex flex-col overflow-y-scroll mt-1 h-36 bg-white w-full gap-2 py-2 px-3 border absolute">
+                                    <li class="cursor-pointer">Mon</li>
+                                    <li class="cursor-pointer">Tue</li>
+                                    <li class="cursor-pointer">Wed</li>
+                                    <li class="cursor-pointer">Thu</li>
+                                    <li class="cursor-pointer">Fri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- cvc section  -->
+                    <section class="flex flex-col w-1/2">
+                        <span class="text-sm">CVC</span>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="relative">
+                                <button id="cvcButton" class="mt-1 flex flex-row items-center gap-3 border py-3 px-3">
+                                    <span class="text-xl text-slate-400 font-semibold">123</span>
+                                    <svg class="fill-[#074c8e]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                </button>
+    
+                                <!-- months nav elements  -->
+                                <ul id="cvcNav" class="opacity-0 flex flex-col overflow-y-scroll mt-1 h-20 bg-white w-full gap-2 py-2 px-3 border absolute">
+                                    <li class="cursor-pointer">435</li>
+                                    <li class="cursor-pointer">152</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <footer class="mt-5 text-sm whitespace-nowrap">By creating an account, you agree to Study.com's <span class="font-bold cursor-pointer hover:underline">Terms of Use</span> and <span class="font-bold cursor-pointer hover:underline">Privacy Policy.</span></footer>
+                <button class="py-3 px-24 bg-[#074c8e] rounded mt-4">
+                    <span class="text-white font-bold">Join Now</span>
+                </button>
+            </section>
+        </article>
+
+        <!-- javascript file -->
+        <script src="index.js"></script>
+    </body>
+</html>
