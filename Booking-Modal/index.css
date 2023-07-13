@@ -1,0 +1,15 @@
+/* Add CSS here */
+
+.active {
+    color: #17181c;
+    border-bottom: 4px #8d92d5 solid;
+}
+
+.inactive {
+    color: #909090
+}
+
+.inactive:hover {
+    border-bottom: 4px #8d92d5 solid;
+    transition-duration: 150ms;
+}
