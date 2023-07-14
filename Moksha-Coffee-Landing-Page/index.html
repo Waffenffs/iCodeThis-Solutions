@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <!-- main color: #2d2f31
+    font/para color: white
+    navigation color: text-slate -->
+    <body class="w-screen h-screen overflow-x-hidden">
+        <nav class="w-full">
+            <ul class="bg-[#2d2f31] pt-6 text-sm text-gray-300 flex flex-row justify-center items-center gap-5 tracking-wider">
+                <li class="w-20 whitespace-nowrap text-center cursor-pointer hover:bg-white hover:text-slate-800 py-3 px-2 transition hover:font-sembold">Our Story</li>
+                <li class="w-20 whitespace-nowrap text-center cursor-pointer hover:bg-white hover:text-slate-800 py-3 px-2 transition hover:font-semibold">Food</li>
+                <li class="w-20 whitespace-nowrap text-center cursor-pointer hover:bg-white hover:text-slate-800 py-3 px-2 transition hover:font-semibold">Coffee</li>
+                <li class="w-20 whitespace-nowrap text-center cursor-pointer hover:bg-white hover:text-slate-800 py-3 px-2 transition hover:font-semibold">Find Us</li>
+            </ul>
+        </nav>
+        
+        <section class="w-screen h-auto relative">
+            <img 
+                src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" 
+                alt="cofee-shop-img.png"
+                class="object-cover w-full backdrop-blur-lg max-h-96"    
+            >
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <section class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center flex flex-col gap-10">
+                <h1 class="font-bold tracking-wide text-3xl">OUR COFFEE</h1>
+                <p class="text-sm tracking-wider">When it comes to the important stuff - the coffee - we are committed to sourcing and serving one of the highest quality
+                and we believe is nothing short of the best coffee possible.</p>
+                <div>
+                    <button class="py-2 px-8 border-2 border-white bg-none transition hover:bg-white hover:text-black hover:rounded">
+                        <span class="font-semibold tracking-wider">Download our menu</span>
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <section class="w-full h-auto bg-[#2d2f31] text-white flex flex-row justify-center items-center py-10 gap-6">
+            <button>
+                <svg 
+                    class="fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2em" 
+                    viewBox="0 0 320 512"
+                >
+                    <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+            </button>
+            <div class="flex flex-col gap-3 items-center">
+                <header class="flex flex-start w-full">
+                    <h1 class="font-semibold text-sm tracking-wider">Gallery</h1>
+                </header>
+                <ul class="flex flex-row gap-5">
+                    <li class="w-52 h-52 hover:scale-110 transition cursor-pointer">
+                        <img 
+                            class="object-fit hover:brightness-100 transition delay-150 brightness-50"
+                            src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
+                            alt="coffee-pic.png"
+                        >
+                    </li>
+                    <li class="w-52 h-52 hover:scale-110 transition cursor-pointer">
+                        <img
+                            class="object-fit hover:brightness-100 transition delay-150 brightness-50"
+                            src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="coffee-pic.png"
+                        >
+                    </li>
+                    <li class="w-52 h-52 hover:scale-110 transition cursor-pointer">
+                        <img
+                            class="object-fit hover:brightness-100 transition delay-150 brightness-50"
+                            src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="coffee-pic.png"
+                        >
+                    </li>
+                    <li class="w-52 h-52 hover:scale-110 transition cursor-pointer">
+                        <img
+                            class="object-fit hover:brightness-100 transition delay-150 brightness-50"
+                            src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="coffee-pic.png"
+                        >
+                    </li>
+                </ul>
+            </div>
+            <button>
+                <svg 
+                    class="fill-white"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="2em" 
+                    viewBox="0 0 320 512"
+                >
+                    <path
+                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+            </button>
+        </section>
+    </body>
+</html>
