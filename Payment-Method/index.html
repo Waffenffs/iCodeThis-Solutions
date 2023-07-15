@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="./styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="w-screen h-screen flex justify-center items-center bg-[#86dff8] p-96 overflow-x-hidden">
+        <article class="bg-white p-10 flex flex-col rounded shadow-xl">
+            <header class="flex flex-row gap-3 items-center ">
+                <div class="flex flex-col gap-2 items-center">
+                    <div class="rounded-full bg-indigo-500 h-12 w-12 flex items-center justify-center">
+                        <svg class="fill-[#86dff8]" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512">
+                            <path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-indigo-800 font-semibold text-sm cursor-default">Shopping Cart</h2>
+                </div>
+                <hr class="w-28 rounded bg-gray-800">
+                <div class="flex flex-col gap-2 items-center">
+                    <div class="rounded-full bg-indigo-500 h-12 w-12 flex items-center justify-center">
+                        <svg class="fill-[#86dff8]" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512">
+                            <path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-indigo-800 font-semibold text-sm cursor-default">Delivery Address</h2>
+                </div>
+                <hr class="w-28 rounded bg-gray-800">
+                <div class="flex flex-col gap-2 items-center">
+                    <div class="rounded-full bg-indigo-500 h-12 w-12 flex items-center justify-center">
+                        <svg class="fill-[#86dff8]" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512">
+                            <path d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-slate-700 font-semibold text-sm cursor-default">Payment Method</h2>
+                </div>
+                <hr class="w-28 rounded bg-gray-800">
+                <div class="flex flex-col gap-2 items-center">
+                    <div class="rounded-full bg-indigo-500 h-12 w-12 flex items-center justify-center">
+                        <svg class="fill-[#86dff8]" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512">
+                            <path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-slate-400 font-semibold text-sm cursor-default">Preview Order</h2>
+                </div>
+            </header>
+
+            <section class="flex flex-col gap-3 mt-28">
+                <h4 class="text-slate-500 text-xl font-semibold tracking-wider">PAYMENT METHOD</h4>
+
+                <div class="flex flex-row gap-3">
+                    <!-- credit card selection  -->
+                    <div class="flex flex-col gap-10 w-1/3">
+                        <button id="selection" class="active p-10 flex justify-center items-center outline outline-none">
+                            <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/800px-Visa_Inc._logo.svg.png?20170118154621" 
+                                alt="visa.png"
+                                class="object-fit w-20"
+                            >
+                        </button>
+
+                        <button id="selection" class="inactive p-10 flex justify-center items-center outline outline-none">
+                            <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/800px-PayPal.svg.png?20230314142951"
+                                alt="paypal.png"
+                                class="object-fit w-20"
+                            >
+                        </button>
+
+                        <button id="selection" class="inactive p-10 flex justify-center items-center outline outline-none">
+                            <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bitcoin_logo.svg/307px-Bitcoin_logo.svg.png?20140331024457"
+                                alt="visa.png"
+                                class="object-fit w-20"
+                            >
+                        </button>
+
+                    </div>
+                    
+                    <!-- form section  -->
+                    <div class="w-2/3 flex flex-col gap-3">
+                        <section class="p-5 flex flex-col gap-3">
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-semibold text-sm text-slate-600 tracking-wide">Card Number</h4>
+                                <input 
+                                    type="text"
+                                    placeholder="xxxx xxxx xxxx xxxx"
+                                    maxlength="16"
+                                    class="w-full outline-none py-3 indent-2 border rounded font-semibold text-slate-700"
+                                >
+                            </div>
+                            <div class="w-full flex flex-row gap-2">
+                                <div class="flex flex-col gap-1 w-2/3">
+                                    <h4 class="font-semibold text-sm text-slate-600 tracking-wide">Expiration Date</h4>
+                                    <input 
+                                        type="date"
+                                        class="w-full outline-none py-3 indent-2 border rounded font-semibold text-slate-700"
+                                    >
+                                </div>
+
+                                <div class="flex flex-col gap-1 w-1/3">
+                                    <h4 class="font-semibold text-sm text-slate-600 tracking-wide">CVV</h4>
+                                    <input 
+                                        type="text"
+                                        maxlength="3"
+                                        placeholder="e.g. 661"
+                                        class="w-full outline-none py-3 indent-2 border rounded font-semibold text-slate-700"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-semibold text-sm text-slate-600 tracking-wide">Card Holder Name</h4>
+                                <input 
+                                    type="text"
+                                    placeholder="e.g. John Doe"
+                                    class="w-full outline-none py-3 indent-2 border rounded font-semibold text-slate-700"
+                                >
+                            </div>
+                        </section>
+
+                        <button class="bg-[#63b5f7] w-full py-6 rounded-xl">
+                            <span class="tracking-wide text-lg font-semibold text-white">Confirm Payment</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>

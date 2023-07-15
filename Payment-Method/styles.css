@@ -1,0 +1,7 @@
+.active {
+    outline-color: #60a5fa !important;
+}
+
+.inactive {
+    outline-color: transparent !important
+}
