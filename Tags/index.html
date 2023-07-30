@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="w-screen h-screen flex justify-center items-center overflow-x-hidden">
+        <main class="w-1/2 h-full">
+            <div class="flex flex-col gap-2 justify-start mt-20">
+                <h2 class="text-[#202244] font-serif font-semibold text-xl">Tags</h2>
+                <input 
+                    class="font-semibold text-[#202244] placeholder:text-slate-500 placeholder:tracking-wide h-14 px-3 shadow-2 border border-slate-300 rounded-xl outline-none"
+                    type="text"
+                    placeholder="Add tags separated by comma">
+                <h3 class="font-semibold text-sm text-slate-700">For example: <span class="text-indigo-600 font-bold cursor-pointer">fitness app</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">dashboard</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">navigation</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">webshop</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">landing page</span class="text-indigo-600 font-bold cursor-pointer"></h3>
+            </div>
+
+            <div class="flex flex-col gap-2 justify-start mt-6">
+                <h2 class="text-[#202244] font-serif font-semibold text-xl">Tags</h2>
+                <div class="h-14 indent-3 shadow-2 border border-slate-300 rounded-xl flex flex-row gap-2 px-3">
+                    <button id="tagButton" class="p-2 rounded bg-[#202244] my-1 flex flex-row gap-3 justify-center items-center cursor-pointer hover:bg-[#ed4a78] transition">
+                        <span id="tagContent" class="text-white text-xl">tag name</span>
+                        <svg 
+                            class="fill-white cursor-pointer hover:fill-red-700 transition"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="1em" 
+                            viewBox="0 0 384 512">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </button>
+
+                    <button id="tagButton" class="p-2 rounded bg-[#202244] my-1 flex flex-row gap-3 justify-center items-center cursor-pointer hover:bg-[#ed4a78] transition">
+                        <span id="tagContent" class="text-white text-xl">tag name</span>
+                        <svg 
+                            class="fill-white cursor-pointer hover:fill-red-700 transition"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="1em" 
+                            viewBox="0 0 384 512">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </button>
+
+                    <button id="tagButton" class="p-2 rounded bg-[#202244] my-1 flex flex-row gap-3 justify-center items-center cursor-pointer hover:bg-[#ed4a78] transition">
+                        <span id="tagContent" class="text-white text-xl">tag name</span>
+                        <svg 
+                            class="fill-white cursor-pointer hover:fill-red-700 transition"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="1em" 
+                            viewBox="0 0 384 512">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </button>
+
+                    <button id="tagButton" class="p-2 rounded bg-[#202244] my-1 flex flex-row gap-3 justify-center items-center cursor-pointer hover:bg-[#ed4a78] transition">
+                        <span id="tagContent" class="text-white text-xl">tag name</span>
+                        <svg 
+                            class="fill-white cursor-pointer hover:fill-red-700 transition"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            height="1em" 
+                            viewBox="0 0 384 512">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="font-semibold text-sm text-slate-700">For example: <span class="text-indigo-600 font-bold cursor-pointer">fitness app</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">dashboard</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">navigation</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">webshop</span class="text-indigo-600 font-bold cursor-pointer">, <span class="text-indigo-600 font-bold cursor-pointer">landing page</span class="text-indigo-600 font-bold cursor-pointer"></h3>
+            </div>
+
+            <div class="w-full flex flex-row gap-10 justify-between">
+                <div class="w-1/2 flex flex-col gap-2">
+                    <h2 class="text-[#202244] font-serif font-semibold text-xl mt-16">Category</h2>
+                    <div class="relative">
+                        <nav 
+                            id="categoryDropdownOne" 
+                            class="w-full py-3 px-5 border border-slate-400 rounded-xl flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold tracking-wide text-[#202244]">Select something</h3>
+                            <svg 
+                                class="fill-[#202244]"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                height="1em" 
+                                viewBox="0 0 512 512">
+                                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                            </svg>
+                        </nav>
+
+                        <ul 
+                            id="categoryMenuOne" 
+                            class="hidden mt-2 w-full shadow-xl rounded-xl bg-white flex flex-col gap-2 border border-slate-300">
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white rounded-t-xl text-slate-700">Web</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">Mobile</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">UI Kit</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">Coded</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white rounded-b-xl text-slate-700">Other</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-1/2 flex flex-col gap-2">
+                    <h2 class="text-[#202244] font-serif font-semibold text-xl mt-16">Category</h2>
+                    <div class="relative">
+                        <nav 
+                            id="categoryDropdownTwo" 
+                            class="w-full py-3 px-5 border border-slate-400 rounded-xl flex justify-between items-center cursor-pointer">
+                            <h3 class="font-semibold tracking-wide text-[#202244]">Select something</h3>
+                            <svg 
+                                class="fill-[#202244]"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                height="1em" 
+                                viewBox="0 0 512 512">
+                                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                            </svg>
+                        </nav>
+
+                        <ul 
+                            id="categoryMenuTwo" 
+                            class="hidden mt-2 w-full shadow-xl rounded-xl bg-white flex flex-col gap-2 border border-slate-300">
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white rounded-t-xl text-slate-700">Web</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">Mobile</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">UI Kit</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white text-slate-700">Coded</li>
+                            <li class="px-4 py-2 font-semibold cursor-pointer hover:bg-blue-500 hover:text-white rounded-b-xl text-slate-700">Other</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- code  -->
+        <script src="script.js"></script>
+    </body>
+</html>
