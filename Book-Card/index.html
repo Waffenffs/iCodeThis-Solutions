@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        >
+        <script src="script.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link 
+            rel="stylesheet" 
+            href="styles.css"
+        >
+    </head>
+    <body class="w-screen h-screen flex justify-center items-center p-30 overflow-x-hidden">
+        <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md z-[-1]"></div>
+        <article class="bg-black/30 rounded py-5 px-10 w-[50rem] backdrop-blur-3xl">
+            <header class="flex flex-row justify-end items-center p-2 gap-6">
+                <button>
+                    <svg 
+                        class="fill-white"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="1.5em" 
+                        viewBox="0 0 448 512"
+                    >
+                        <path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"/>
+                    </svg>
+                </button>
+                <button>
+                    <svg 
+                        class="fill-white"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="1.5em" 
+                        viewBox="0 0 384 512"
+                    >
+                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                    </svg>
+                </button>
+            </header>
+
+            <section class="flex flex-row justify-start w-full px-10 gap-4">
+                <aside class=" flex flex-col gap-2">
+                    <img 
+                        class="w-32 h-auto"
+                        src="https://i.pinimg.com/originals/3f/37/fb/3f37fbc161a83e952dfc8f5103f36939.png" 
+                        alt=""
+                    >
+
+                    <div class="flex flex-row gap-1 items-center">
+                        <svg class="fill-[#f4ea6c]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg class="fill-[#f4ea6c]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg class="fill-[#f4ea6c]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg class="fill-[#f4ea6c]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg class="fill-[#f4ea6c]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 0c-12.2 .1-23.3 7-28.6 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3L288 439.8V0zM429.9 512c1.1 .1 2.1 .1 3.2 0h-3.2z"/></svg>
+                    </div>
+                </aside>
+
+                <aside class="h-full flex flex-col justify-start text-white">
+                    <h1 class="text-6xl text-[#ffcc0e] font-bold py-0 -mt-3">Dune</h1>
+                    <h3 class="text-2xl text-slate-200 -mt-1">Novel by <span class="cursor-pointer font-bold text-3xl text-white">Frank Herbert</span></h3>
+                    <p class="text-sm tracking-wide mt-4 text-justify cursor-default">Set in the far future amidst a sprawling feudal interstellar empire where planetary dynasties are controlled by noble houses that owe an allegiance to the imperial House Corrino, Dune tells the story of young Paul Atreides (the heir apparent to Duke Leto Atreides and heir of House Atreides) as he and his family accept control of the desert planet Arrakis...</p>
+                    <footer class="mt-3">
+                        <button class="bg-[#37312c] py-2 px-4 rounded-3xl border-4 border-[#8e5130]">
+                          <h1 class="text-[#ff5d00] font-bold">CONTINUE READING</h1>  
+                        </button>
+                    </footer>
+                </aside>
+            </section>
+
+            <footer class="flex flex-row mt-10">
+                <section class="border-r-4 border-white/50 flex flex-col">
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-end whitespace-nowrap px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Originally Published</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-end px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Author</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-end px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Followed By</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-end whitespace-nowrap px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Page Counts</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-end px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Adaptations</h3>
+                    </div>
+                    <div class="h-10 flex items-center justify-end px-2">
+                        <h3 class="text-[#ffcc0e] text-sm font-bold">Characters</h3>
+                    </div>
+                </section>
+
+                <section class="flex flex-col text-white">
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-start px-2">
+                        <h3 class="text-sm">1965</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-start px-2">
+                        <h3 class="text-sm">Frank Herbert</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-start px-2">
+                        <h3 class="text-sm">Dune Messiah</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-start px-2">
+                        <h3 class="text-sm">412</h3>
+                    </div>
+                    <div class="h-10 border-b-4 border-white/50 flex items-center justify-start px-2">
+                        <h3 class="text-sm">Dune (1984), Frank Herbert's Dune (2000)</h3>
+                    </div>
+                    <div class="mt-2 flex items-center justify-start px-2 max-w-lg">
+                        <h3 class="text-sm text-justify leading-6">Paul Atreides, Vladimir Harkonnen, Chani, Leto Atreides I, Lady Jessica, Princess Irulan, Alia Atreides, Duncan Idaho, Feyd-Rautha, Thufir Hawat, Gurney Halleck, Shaddam IV Liet-Kynes, Piter De Vries, Gaius Helen Mohiam, Glossu Rabban Hasimir Fenring</h3>
+                    </div>
+                </section>
+            </footer>
+        </article>
+        
+    </body>
+</html>
