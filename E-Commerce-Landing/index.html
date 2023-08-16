@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="w-screen h-screen bg-[#f4f6f8] overflow-x-hidden">
+        <nav class="w-full flex flex-row justify-between px-5 mt-4">
+            <div>
+                <ul class="flex flex-row items-center gap-5">
+                    <li class="group w-20 text-center flex flex-col items-center">
+                        <div class="border-t-2 transition border-[#f4f6f8] w-10 group-hover:border-[#eb2069]"></div>
+                        <span class="py-2 group-hover:text-[#eb2069] whitespace-nowrap font-bold text-sm text-gray-700 tracking-wide cursor-pointer">NEW</span>
+                    </li>
+                    <li class="group w-20 text-center flex flex-col items-center">
+                        <div class="border-t-2 transition border-[#f4f6f8] w-10 group-hover:border-[#eb2069]"></div>
+                        <span class="py-2 group-hover:text-[#eb2069] whitespace-nowrap font-bold text-sm text-gray-700 tracking-wide cursor-pointer">GIFT GUIDE</span>
+                    </li>
+                    <li class="group w-20 text-center flex flex-col items-center">
+                        <div class="border-t-2 transition border-[#f4f6f8] w-10 group-hover:border-[#eb2069]"></div>
+                        <span class="py-2 group-hover:text-[#eb2069] whitespace-nowrap font-bold text-sm text-gray-700 tracking-wide cursor-pointer">PROMO</span>
+                    </li>
+                    <li class="group w-20 text-center flex flex-col items-center">
+                        <div class="border-t-2 transition border-[#f4f6f8] w-10 group-hover:border-[#eb2069]"></div>
+                        <span class="py-2 group-hover:text-[#eb2069] whitespace-nowrap font-bold text-sm text-gray-700 tracking-wide cursor-pointer">TRENDS</span>
+                    </li>
+                    <li class="group w-20 text-center flex flex-col items-center">
+                        <div class="border-t-2 transition border-[#f4f6f8] w-10 group-hover:border-[#eb2069]"></div>
+                        <span class="py-2 group-hover:text-[#eb2069] whitespace-nowrap font-bold text-sm text-gray-700 tracking-wide cursor-pointer">SOCIAL</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-row items-center gap-1">
+                <button class="w-18 py-2 px-3">
+                    <span class="text-slate-600 font-semibold text-sm">Log in</span>
+                </button>
+                <button class="w-18 py-2 px-3 bg-[#eb2069] rounded-3xl">
+                    <span class="text-white font-semibold text-sm">Sign Up</span>
+                </button>
+                <button class="w-19 py-2 px-3">
+                    <svg class="fill-slate-400" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64H48c8.8 0 16 7.2 16 16V368c0 44.2 35.8 80 80 80h18.7c-1.8 5-2.7 10.4-2.7 16c0 26.5 21.5 48 48 48s48-21.5 48-48c0-5.6-1-11-2.7-16H450.7c-1.8 5-2.7 10.4-2.7 16c0 26.5 21.5 48 48 48s48-21.5 48-48c0-5.6-1-11-2.7-16H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H144c-8.8 0-16-7.2-16-16V80C128 35.8 92.2 0 48 0H32zM192 80V272c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H464V176c0 5.9-3.2 11.3-8.5 14.1s-11.5 2.5-16.4-.8L400 163.2l-39.1 26.1c-4.9 3.3-11.2 3.6-16.4 .8s-8.5-8.2-8.5-14.1V32H240c-26.5 0-48 21.5-48 48z"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <header class="px-11 py-2 mt-2 bg-white w-full flex flex-row justify-between">
+            <div class="flex flex-row items-center gap-2">
+                <span class="text-slate-600 text-sm cursor-pointer transition hover:text-blue-400">Home</span>
+                <svg class="fill-slate-400" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                <span class="text-slate-600 text-sm cursor-pointer transition hover:text-blue-400">Categories</span>
+                <svg class="fill-slate-400" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                <span class="text-slate-600 text-sm cursor-pointer transition hover:text-blue-400">Outerwear</span>
+            </div>
+
+            <button>
+                <svg class="fill-slate-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </button>
+        </header>
+
+        <article class="flex flex-row px-10 mt-5 gap-3 w-full">
+            <section class="flex flex-col w-2/12 sticky top-0 h-full">
+                <h3 class="text-[#eb2069] font-semibold text-base">CATEGORIES</h3>
+                <div class="flex flex-col gap-1 text-sm text-slate-600">
+                    <div class="flex flex-row items-center gap-1 cursor-pointer mt-2">
+                        <svg class="fill-[#eb2069]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        <h3 class="font-semibold">WOMAN</h3>
+                    </div>
+                    <div class="px-5 flex flex-col gap-1">
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Outerwear</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Bombers</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Blazers</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Dresses</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Jumpsuits</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Tops</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Trousers</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Jeans</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Shorts</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Skirts</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">T-shirts</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Gymwear</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Basics</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Shoes</h4>
+                        <h4 class="cursor-pointer transition hover:text-blue-400">Bags</h4>
+                    </div>
+                    <div>
+                        <div class="flex flex-row items-center gap-1 cursor-pointer mt-2">
+                            <svg class="fill-[#eb2069]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            <h3 class="font-semibold text-slate-700">MAN KIDS</h3>
+                        </div>
+                        <div class="flex flex-row items-center gap-1 cursor-pointer mt-2">
+                            <svg class="fill-[#eb2069]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            <h3 class="font-semibold text-slate-700">ACCESSORIES</h3>
+                        </div>
+                        <div class="flex flex-row items-center gap-1 cursor-pointer mt-2">
+                            <svg class="fill-[#eb2069]" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            <h3 class="font-semibold text-slate-700">EDITORIALS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center text-sm mt-7">
+                    <h3 class="font-semibold text-[#eb2069]">NEWSLETTER</h3>
+                    <p class="max-w-[16.3rem] mt-2 text-slate-700 text-center">Sign up for our newsletter, get good deals and stay updated on our hottest products.</p>
+                </div>
+            </section>
+
+            <section class="flex flex-col w-10/12 flex-wrap">
+                <div class="w-full relative object-contain">
+                    <img 
+                        class="object-cover w-full h-80"
+                        src="https://wallpaperaccess.com/full/419101.jpg" 
+                        alt=""
+                    >
+
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col">
+                        <h3 class="font-serif text-6xl text-white whitespace-nowrap italic">New Winter Collection</h3>
+                        <div class="bg-black/30 rounded py-2 px-3 mt-5 backdrop-blur-sm">
+                            <p class="text-white text-center font-semibold">Quis ante penatibus. Sodales id eget, nam duis odio. Quam porttitor, sem vulputate sociis, erat nibh.</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="py-2 px-4 bg-white text-[#eb2069] rounded-3xl mt-5">VIEW COLLECTION</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 mt-5">
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+                
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+
+                    <article class="w-full h-auto">
+                        <img 
+                            class="w-full h-64 object-cover bg-red-500"
+                            src="https://balenciaga.dam.kering.com/m/25030b3f26d6bb4e/Small-681631TOLE99167_Y.jpg?v=1" 
+                            alt=""
+                        >
+                        <button class="w-full bg-[#eb2069] h-14">
+                            <span class="font-semibold text-white">Add to bag</span>
+                        </button>
+                    </article>
+                
+                    <!-- Add more articles as needed -->
+                </div>
+                
+            </section>
+        </article>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
